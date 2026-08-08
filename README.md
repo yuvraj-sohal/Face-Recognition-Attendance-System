@@ -30,6 +30,19 @@ The project is designed to automate attendance recording while reducing the need
 - Maintain a mapping between user IDs and names
 - Separate scripts for data collection, model training, and attendance recognition
 
+## Models Used
+
+The system uses two main computer vision models as part of the face recognition pipeline.
+### 1. Haar Cascade Classifier
+The Haar Cascade Classifier is used for **face detection**.
+It identifies faces in the camera frames and determines the location of detected faces before they are passed to the recognition stage.
+The classifier is used during the face data collection and recognition processes.
+### 2. Local Binary Patterns Histograms (LBPH)
+The **LBPH Face Recognizer** is used for **face recognition**.
+It is trained using the collected facial images and assigns a user ID to a detected face based on the learned facial patterns.
+The recognition result is then used to identify the corresponding user and record attendance.
+
+
 ## Project Workflow
 
 ### 1. Face Data Collection
@@ -42,18 +55,6 @@ python src/collect_faces.py
 
 Captured images are organized according to the user's ID.
 The actual face dataset is intentionally excluded from this public repository because it contains biometric data.
-
-## Models Used
-
-The system uses two main computer vision models as part of the face recognition pipeline.
-### 1. Haar Cascade Classifier
-The Haar Cascade Classifier is used for **face detection**.
-It identifies faces in the camera frames and determines the location of detected faces before they are passed to the recognition stage.
-The classifier is used during the face data collection and recognition processes.
-### 2. Local Binary Patterns Histograms (LBPH)
-The **LBPH Face Recognizer** is used for **face recognition**.
-It is trained using the collected facial images and assigns a user ID to a detected face based on the learned facial patterns.
-The recognition result is then used to identify the corresponding user and record attendance.
 
 ### 2. Model Training
 
