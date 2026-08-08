@@ -89,29 +89,6 @@ The system uses the connected camera to detect and recognize registered users an
 
 ## Project Structure
 
-```text
-Face-Recognition-Attendance-System/
-│
-├── src/
-│   ├── collect_faces.py
-│   ├── train_model.py
-│   └── recognize_attendance.py
-│
-├── dataset/
-│   └── README.md
-│
-├── attendance/
-│   └── README.md
-│
-├── trainer/
-│   └── README.md
-│
-├── requirements.txt
-├── .gitignore
-├── README.md
-└── LICENSE
-```
-
 ### `src/collect_faces.py`
 
 Responsible for collecting facial images for registered users.
