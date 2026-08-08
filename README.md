@@ -1,21 +1,20 @@
-# Face Recognition Attendance System
+# Face Recognition Attendance System (CLI)
 
-> A Python-based attendance system that uses computer vision and machine learning techniques to recognize registered users and record their attendance automatically.
-The Face Recognition Attendance System is a computer vision project developed using Python and OpenCV.
+A Python-based attendance system that uses computer vision and machine learning techniques to recognize registered users and record their attendance automatically.The Face Recognition Attendance System is a computer vision project developed using Python and OpenCV.
 The system follows a complete face-recognition pipeline:
-```text
-Collect Face Images
-        ↓
-Create Dataset
-        ↓
-Train Recognition Model
-        ↓
-Recognize Face
-        ↓
-Mark Attendance
-        ↓
-Store Attendance Record
-```
+
+                Collect Face Images
+                        ↓
+                Create Dataset
+                        ↓
+                Train Recognition Model
+                        ↓
+                Recognize Face
+                        ↓
+                Mark Attendance
+                        ↓
+                Store Attendance Record
+
 The project is designed to automate attendance recording while reducing the need for manual entry.
 
 ## Key Features
